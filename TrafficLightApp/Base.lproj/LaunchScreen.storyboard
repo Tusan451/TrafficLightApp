@@ -29,7 +29,7 @@
                                         <rect key="frame" x="0.0" y="200" width="251" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="5s5-aN-trY"/>
-                                            <constraint firstAttribute="width" constant="251" id="oi9-3W-yxB"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="251" id="oi9-3W-yxB"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="32"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -39,7 +39,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.0" green="0.31426408850134374" blue="0.61474116161616155" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.0" green="0.31372550129999999" blue="0.61568629740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="S15-tR-aVh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="PEf-u0-Fdk"/>
                             <constraint firstItem="S15-tR-aVh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="RQz-a7-qbR"/>
