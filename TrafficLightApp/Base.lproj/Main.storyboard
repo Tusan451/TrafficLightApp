@@ -16,45 +16,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ft-B5-TWn">
-                                <rect key="frame" x="132" y="768" width="150" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="IG3-g6-0ZM"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="giq-Sg-hrs"/>
-                                </constraints>
-                                <color key="tintColor" red="0.39954008470000002" green="0.56048556630000002" blue="0.86087566609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Start">
-                                    <fontDescription key="titleFontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
-                                </buttonConfiguration>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="C75-ev-2lp">
-                                <rect key="frame" x="95.5" y="54" width="223" height="708"/>
+                                <rect key="frame" x="93.5" y="54" width="227" height="722"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Rg-b5-pyH">
-                                        <rect key="frame" x="0.0" y="0.0" width="223" height="222.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="227" height="227.5"/>
                                         <color key="backgroundColor" red="0.92156863209999995" green="0.26666668059999998" blue="0.35294118520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="0Rg-b5-pyH" secondAttribute="height" multiplier="1:1" id="3fg-zf-W3J"/>
+                                            <constraint firstAttribute="width" secondItem="0Rg-b5-pyH" secondAttribute="height" multiplier="1:1" id="nsG-LZ-IAn"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N4n-Ur-apk">
-                                        <rect key="frame" x="0.0" y="242.5" width="223" height="223"/>
+                                        <rect key="frame" x="0.0" y="247.5" width="227" height="227"/>
                                         <color key="backgroundColor" red="0.93725490570000003" green="0.83529412749999998" blue="0.32156863810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fzp-lf-XMf">
-                                        <rect key="frame" x="0.0" y="485.5" width="223" height="222.5"/>
+                                        <rect key="frame" x="0.0" y="494.5" width="227" height="227.5"/>
                                         <color key="backgroundColor" red="0.46274507050000002" green="0.92549026010000002" blue="0.32941177490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ft-B5-TWn">
+                                <rect key="frame" x="20" y="802" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.39954008470000002" green="0.56048556630000002" blue="0.86087566609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="IG3-g6-0ZM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
+                                <color key="tintColor" red="0.39954008470000002" green="0.56048556630000002" blue="0.86087566609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Start"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.0" green="0.31372550129999999" blue="0.61568629740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="C75-ev-2lp" secondAttribute="bottom" constant="100" id="a6f-l1-mBM"/>
+                            <constraint firstItem="2ft-B5-TWn" firstAttribute="top" secondItem="C75-ev-2lp" secondAttribute="bottom" constant="26" id="23O-ej-OEb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2ft-B5-TWn" secondAttribute="bottom" constant="10" id="5aR-fm-Hmd"/>
                             <constraint firstItem="C75-ev-2lp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dKd-Ec-uXz"/>
                             <constraint firstItem="C75-ev-2lp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="gcL-cv-w8M"/>
+                            <constraint firstItem="2ft-B5-TWn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pyF-el-Ymz"/>
+                            <constraint firstItem="2ft-B5-TWn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xQr-9B-XKH"/>
                         </constraints>
                     </view>
                 </viewController>
