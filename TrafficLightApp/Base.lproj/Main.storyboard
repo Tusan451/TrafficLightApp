@@ -63,8 +63,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="greenLight" destination="fzp-lf-XMf" id="Rzu-gf-xp7"/>
+                        <outlet property="redLight" destination="0Rg-b5-pyH" id="2f4-rg-czB"/>
                         <outlet property="startButton" destination="2ft-B5-TWn" id="u27-pz-wqc"/>
-                        <outletCollection property="lights" destination="0Rg-b5-pyH" collectionClass="NSMutableArray" id="KzB-qJ-i61"/>
+                        <outlet property="yellowLight" destination="N4n-Ur-apk" id="hmz-HB-sDl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
