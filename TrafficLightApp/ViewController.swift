@@ -16,12 +16,13 @@ class ViewController: UIViewController {
     @IBOutlet var redLight: UIView!
     @IBOutlet var yellowLight: UIView!
     @IBOutlet var greenLight: UIView!
+    
     @IBOutlet var startButton: UIButton!
     
-    let lightOn: CGFloat = 1
-    let lightOff: CGFloat = 0.3
+    private let lightOn: CGFloat = 1
+    private let lightOff: CGFloat = 0.3
     
-    var currentLight: CurrentLight = .red
+    private var currentLight = CurrentLight.red
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,11 +31,14 @@ class ViewController: UIViewController {
         yellowLight.alpha = lightOff
         greenLight.alpha = lightOff
         
+        startButton.layer.cornerRadius = 10
+        
+    }
+    
+    override func viewWillLayoutSubviews() {
         redLight.layer.cornerRadius = redLight.frame.size.width / 2
         yellowLight.layer.cornerRadius = yellowLight.frame.size.width / 2
         greenLight.layer.cornerRadius = greenLight.frame.size.width / 2
-        startButton.layer.cornerRadius = 10
-        
     }
 
     @IBAction func startButtonPressed() {
