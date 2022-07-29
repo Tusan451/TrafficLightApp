@@ -46,6 +46,9 @@
                                 <color key="tintColor" red="0.39954008470000002" green="0.56048556630000002" blue="0.86087566609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="drC-qE-SXe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -59,6 +62,10 @@
                             <constraint firstItem="2ft-B5-TWn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xQr-9B-XKH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="startButton" destination="2ft-B5-TWn" id="u27-pz-wqc"/>
+                        <outletCollection property="lights" destination="0Rg-b5-pyH" collectionClass="NSMutableArray" id="KzB-qJ-i61"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
